@@ -1,0 +1,16 @@
+<select (change)="cambiarCategoria($event)">
+    <option value="todos">Todos</option>
+    <option *ngFor="let categoria of categorias" [value]="categoria">{{categoria}}</option>
+
+</select>
+
+<div class="row">
+    <div class="col-12 col-md-4 p-3" *ngFor="let post of arrPosts">
+        <h3>{{post.titulo}}</h3>
+        <img [src]="post.imagen" alt="">
+        <p>{{post.texto}}</p>
+        <p>Autor: {{post.autor}}</p>
+        <p>Fecha: {{post.fecha}}</p>
+        <p>Categoria: {{post.categoria}}</p>
+    </div>
+</div>
