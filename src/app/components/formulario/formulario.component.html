@@ -1,28 +1,30 @@
-<form [formGroup]="formulario">
-    <div class="mb-3">
-        <label class="form-label">Titulo</label>
-        <input type="text" class="form-control" formControlName="titulo">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Texto</label>
-        <input type="text" class="form-control" formControlName="texto">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Autor</label>
-        <input type="text" class="form-control" formControlName="autor">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Imagen</label>
-        <input type="text" class="form-control" formControlName="imagen">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Fecha</label>
-        <input type="text" class="form-control" formControlName="fecha">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Categoria</label>
-        <input type="text" class="form-control" formControlName="categoria">
-    </div>
+<div class="container">
+    <form [formGroup]="formulario">
+        <div class="mb-3">
+            <label class="form-label">Titulo</label>
+            <input type="text" class="form-control" formControlName="titulo">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Texto</label>
+            <input type="text" class="form-control" formControlName="texto">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Autor</label>
+            <input type="text" class="form-control" formControlName="autor">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Imagen</label>
+            <input type="text" class="form-control" formControlName="imagen">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Fecha</label>
+            <input type="text" class="form-control" formControlName="fecha">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Categoria</label>
+            <input type="text" class="form-control" formControlName="categoria">
+        </div>
 
-    <input type="submit" value="Enviar" (click)="onClick()">
-</form>
+        <input class="boton" type="submit" value="Enviar" (click)="onClick()">
+    </form>
+</div>

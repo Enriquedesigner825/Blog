@@ -1,3 +1,12 @@
 form {
     background-color: lightblue;
+    border: 2px solid blue;
+}
+
+form label {
+    margin-left: 10px;
+}
+
+.container .boton {
+    margin: 0 0 10px 10px;
 }
