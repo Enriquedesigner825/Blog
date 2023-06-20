@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
+import { PostsService } from 'src/app/services/posts.service';
 
 @Component({
   selector: 'formulario',
@@ -9,6 +10,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms'
 export class FormularioComponent {
 
   formulario: FormGroup;
+
+  postsService = inject(PostsService)
 
 
   constructor() {
@@ -34,7 +37,8 @@ export class FormularioComponent {
     });
   }
 
-  onSubmit() {
-    console.log(this.formulario.value)
+  onClick() {
+    const response = this.postsService.create(this.formulario.value)
   }
+
 }
