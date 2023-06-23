@@ -9,6 +9,8 @@ import { PostsService } from 'src/app/services/posts.service';
 })
 export class ListaPostsComponent {
 
+
+
   arrPosts: Post[];
   categorias: string[]
 
@@ -17,6 +19,7 @@ export class ListaPostsComponent {
   constructor() {
     this.arrPosts = [];
     this.categorias = [];
+
   }
 
 

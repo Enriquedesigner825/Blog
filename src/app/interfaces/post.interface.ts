@@ -3,7 +3,7 @@ export interface Post {
     texto: string;
     autor: string;
     imagen: string;
-    fecha: number;
+    fecha: string;
     categoria: string;
 
 }
