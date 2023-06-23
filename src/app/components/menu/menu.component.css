@@ -1,5 +1,7 @@
 .container {
-    background-color: blueviolet;
+    background-image: url(../../img/epicBlog.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 nav ul {
@@ -15,4 +17,8 @@ nav ul li {
 
     background-color: lightcoral;
     color: white;
+}
+
+nav ul li:hover {
+    background-color: red;
 }

@@ -19,6 +19,7 @@ export class ListaPostsComponent {
   constructor() {
     this.arrPosts = [];
     this.categorias = [];
+
   }
 
 

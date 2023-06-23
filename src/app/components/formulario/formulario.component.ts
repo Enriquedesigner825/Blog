@@ -29,12 +29,16 @@ export class FormularioComponent {
         Validators.required
       ]),
       fecha: new FormControl(null, [
-        Validators.required
+        Validators.required,
+        Validators.pattern(/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/)
       ]),
       categoria: new FormControl(null, [
         Validators.required
       ])
     });
+  }
+  checkError(field: string, error: string) {
+    return this.formulario.get(field)?.hasError(error) && this.formulario.get(field)?.touched;
   }
 
   onClick() {

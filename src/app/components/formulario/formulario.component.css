@@ -9,4 +9,14 @@ form label {
 
 .container .boton {
     margin: 0 0 10px 10px;
+    background-color: lightcoral;
+    color: white;
+}
+
+input.ng-valid.ng-touched {
+    border: 2px solid green;
+}
+
+input.ng-invalid.ng-touched {
+    border: 2px solid tomato;
 }
