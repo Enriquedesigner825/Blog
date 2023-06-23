@@ -2,6 +2,7 @@
     background-image: url(../../img/epicBlog.png);
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 nav ul {
@@ -9,12 +10,13 @@ nav ul {
     list-style: none;
     padding: 20px;
 
+
 }
 
 nav ul li {
     padding: 20px;
     margin: 20px;
-
+    cursor: pointer;
     background-color: lightcoral;
     color: white;
 }
